@@ -11,7 +11,7 @@ const client = new Client({
     database: process.env.NAME_DB,
     password: process.env.PASSWORD_DB,
     port: process.env.PORT_DB,
-  })
+  });
   client.connect(function(err) {
     if (err) throw err;
     console.log("Connected!");
@@ -53,7 +53,7 @@ app.get('/postgres/:carnet/:nombre',function (request,response) {
 
 
 app.get('/postgres', function (req, res, next) {
-    client.query('SELECT * FROM Employee where id = $1', [1], function (err, result) {
+    client.query('SELECT * FROM pais where pais.codigopais = $1', [1], function (err, result) {
         if (err) {
             console.log(err);
             res.status(400).send(err);

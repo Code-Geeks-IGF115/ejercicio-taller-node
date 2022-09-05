@@ -25,11 +25,11 @@ create table FRONTERA (
 create table PAIS (
    CODIGOPAIS           SERIAL                 not null,
    CODIGOREGION         INT4                 null,
-   NOMBREPAIS           CHAR(25)             not null,
+   NOMBREPAIS           VARCHAR(25)             not null,
    POBLACION            INT4                 null,
-   CAPITAL              CHAR(25)             null,
-   MONEDA               CHAR(15)             null,
-   IDIOMA               CHAR(15)             null,
+   CAPITAL              VARCHAR(25)             null,
+   MONEDA               VARCHAR(15)             null,
+   IDIOMA               VARCHAR(15)             null,
    constraint PK_PAIS primary key (CODIGOPAIS)
 );
 
@@ -38,7 +38,7 @@ create table PAIS (
 /*==============================================================*/
 create table REGION (
    CODIGOREGION         SERIAL	    not null,
-   NOMBREREGION         CHAR(25)             not null,
+   NOMBREREGION         VARCHAR(25)             not null,
    constraint PK_REGION primary key (CODIGOREGION)
 );
 
