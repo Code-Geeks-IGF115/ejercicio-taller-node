@@ -12,7 +12,7 @@ services:
       - ..:/workspace:cached
     command: sleep infinity
   pgadmin:
-    container_name: pgadmin4_container
+    container_name: pgadmin4-taller7
     image: dpage/pgadmin4
     restart: always
     environment:
