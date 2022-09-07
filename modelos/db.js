@@ -20,5 +20,6 @@ const Region = sequelize.define('Region', RegionModel, {});
 const Pais = sequelize.define('Pais', PaisModel, {});
 Region.hasMany(Pais);
 Pais.belongsTo(Region);
+Pais.belongsToMany(Pais, { as: 'Frontera', through: 'OrigenDestino' });
 
 module.exports = { sequelize }
