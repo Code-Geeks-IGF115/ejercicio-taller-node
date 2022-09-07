@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "proyecto2",
+    "password": "proyecto2",
+    "database": "proyecto2.1-development",
+    "host": "prn315-g3.czoy1vdwgmhj.us-east-1.rds.amazonaws.com",
+    "dialect": "postgres" 
+  },
+  "test": {
+    "username": "proyecto2",
+    "password": "proyecto2",
+    "database": "proyecto2.1-test",
+    "host": "prn315-g3.czoy1vdwgmhj.us-east-1.rds.amazonaws.com",
+    "dialect": "postgres" 
+  },
+  "production": {
+    "username": "proyecto2",
+    "password": "proyecto2",
+    "database": "proyecto2.1-production",
+    "host": "prn315-g3.czoy1vdwgmhj.us-east-1.rds.amazonaws.com",
+    "dialect": "postgres" 
+  }
+}
