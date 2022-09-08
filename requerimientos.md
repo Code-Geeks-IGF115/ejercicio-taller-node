@@ -9,4 +9,6 @@ https://help.scalegrid.io/docs/postgresql-connecting-to-nodejs-driver
 <!-- documentacion de postgresql -->
 https://www.postgresqltutorial.com/postgresql-administration/postgresql-show-tables/
 
-
+npx sequelize-cli seed:generate --name nombre_seed
+npx sequelize-cli db:seed --seed nombre_archivo_seed.js
+npx sequelize-cli db:seed:all 
