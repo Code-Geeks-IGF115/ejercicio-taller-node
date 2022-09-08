@@ -7,6 +7,7 @@ const {filtrarPaisPorNombre, filtrarPaisPorRegion, getPaises} = require(__dirnam
 const PORT = process.env.PORT || 3000;
 
 app.route('/paises').get(getPaises);
+app.route('/pais/region/:regionId').get(filtrarPaisPorRegion);
 
 app.listen(PORT, async function () {
     try {

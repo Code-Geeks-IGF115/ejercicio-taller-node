@@ -1,9 +1,14 @@
 //jshint esversion:6
 const {Pais}=require(`../models`);
 //retorna paises segun region
-function filtrarPaisPorRegion(req, res){
+ async function filtrarPaisPorRegion(req, res){
+    regionId=req.params.regionId;
+    const paises = await Pais.findAll({
+        where:{
+            RegionId:regionId
+        }});
 
-    res.json({});
+    res.json({data: paises});
 }
 // Retorna paises filtrados por el atributo nombre
 const filtrarPaisPorNombre = (request, response) => {
