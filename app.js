@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 app.route('/paises').get(getPaises);
 app.route('/pais/region/:regionId').get(filtrarPaisPorRegion);
-
+app.route('/pais/nombre/:nombrePais').get(filtrarPaisPorNombre);
 app.listen(PORT, async function () {
     try {
         await sequelize.authenticate();
